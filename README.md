@@ -11,7 +11,7 @@ FT2232H搭載USBシリアル変換モジュール
 
 # 概要
 <!-- <img src="Image/block-diagram_01.png" width="800px"> -->
-<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/block-giagram_01.jpg" width="500px">
+<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/block-diagram_01.jpg" width="500px">
 
 - FTDI製FT2232H搭載USBシリアル変換モジュール
 - JTAGとUARTが各1ch同時に使用可能
