@@ -192,3 +192,6 @@ UARTの送受信に応じてLEDが点灯します。
 
 <!-- <img src="Image/usage-uart_11.jpg" width="500px"> -->
 <img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-uart_11.jpg" width="500px">
+
+# サポート
+- 質問や不具合報告はGitHubのIssuesでお願いします。
