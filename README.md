@@ -82,8 +82,8 @@ TBD
 
 
 # Žg—p•û–@
-## PC‚Æ‚ÌÚ‘±
-PC‚ÆUSB Type-A to Type-CƒP[ƒuƒ‹‚ÅÚ‘±‚µ‚Ä‚­‚¾‚³‚¢B
+## ƒpƒ\ƒRƒ“‚Æ‚ÌÚ‘±
+ƒpƒ\ƒRƒ“‚ÆUSB Type-A to Type-CƒP[ƒuƒ‹‚ÅÚ‘±‚µ‚Ä‚­‚¾‚³‚¢B
 
 <!-- <img src="Image/usage-pc_01.jpg" width="500px"> -->
 <img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-pc_01.jpg" width="500px">
@@ -102,11 +102,37 @@ Ubuntu 11.10, kernel 3.0.0-19ˆÈ~‚Ìƒpƒ\ƒRƒ“‚Å‚ÍAƒfƒoƒCƒXƒhƒ‰ƒCƒo‚ÍƒCƒ“ƒXƒg[ƒ‹
 
 ### Ý’è
 #### Windows
-TBD
-[Zadig - USB driver installation made easy](https://zadig.akeo.ie/)
+Windows‚Ìƒpƒ\ƒRƒ“‚ðŽg—p‚·‚éê‡AƒfƒoƒCƒXƒhƒ‰ƒCƒo‚ðˆÈ‰º‚ÌŽè‡‚Å“ü‚ê‘Ö‚¦‚éB
+
+1. ƒhƒ‰ƒCƒo“ü‚ê‘Ö‚¦ƒc[ƒ‹(Zadig)‚ðƒ_ƒEƒ“ƒ[ƒh
+    - [Zadig - USB driver installation made easy](https://zadig.akeo.ie/)
+2. ƒpƒ\ƒRƒ“‚ÉUSB-JTAG/UART‚ðÚ‘±‚µ‚½ó‘Ô‚ÅZadig‚ðŽÀs
+3. "Options->List All Devices"‚ð‘I‘ð
+<BR><img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-driver_01.png" width="500px">
+4. ""‚ð‘I‘ð
+<BR><img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-driver_02.png" width="500px">
+    - "(Interface 1)"‚Í“ü‚ê‘Ö‚¦‚È‚¢
+5. "FTDIBUS"‚©‚ç"WinUSB"‚É“ü‚ê‘Ö‚¦
+<BR><img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-driver_03.png" width="500px">
+6. Driver ‚ª"NONE" ‚É‚È‚Á‚Ä‚¢‚éê‡A"Replace Driver"‚ðƒNƒŠƒbƒN‚µ‚Ä"NONE"‚©‚ç"WinUSB"‚É“ü‚ê‘Ö‚¦
+<BR><img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-driver_04.png" width="500px">
 
 #### Linux
-TBD
+Linux‚Ìƒpƒ\ƒRƒ“‚ðŽg—p‚·‚éê‡AUSB-JTAG/UART‚ðˆê”Êƒ†[ƒU‚ÅŽg—p‚Å‚«‚é‚æ‚¤‚É‚·‚é‚½‚ß‚ÉAˆÈ‰º‚ÌŽè‡‚ÅudevÝ’è‚ð’Ç‰Á‚·‚éB
+
+1. /etc/udev/rules.d/99-ttyusb.rules‚Æ‚¢‚¤ƒtƒ@ƒCƒ‹‚ðV‹Kì¬‚µ‚ÄˆÈ‰º‚Ì“à—e‚ð‹LÚ
+```
+# JTAG Adapter
+ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6010", MODE="0666"
+```
+2. ˆÈ‰º‚ÌƒRƒ}ƒ“ƒh‚ÅudevÝ’è‚ð”½‰f
+```
+sudo udevadm trigger
+```
+
+USB-JTAG/UART‚ðLinux‚Ìƒpƒ\ƒRƒ“‚ÉÚ‘±‚·‚é‚ÆA
+/dev/ttyUSB0(”Žš‚ÍŠÂ‹«‚ÉˆË‘¶)‚Ì‚æ‚¤‚ÈƒfƒoƒCƒXƒtƒ@ƒCƒ‹‚ªì¬‚³‚ê‚Ü‚·B
+ã‹L‚ÌÝ’è‚ðs‚¤‚±‚Æ‚ÅAƒfƒoƒCƒXƒtƒ@ƒCƒ‹‚ªˆê”Êƒ†[ƒU‚Å‚àƒAƒNƒZƒX‰Â”\‚É‚È‚è‚Ü‚·B
 
 ## JTAG
 ### OpenOCD
