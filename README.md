@@ -4,8 +4,8 @@ USB-JTAG/UART
 FT2232H搭載USBシリアル変換モジュール
 
 <div align="center">
-<!-- <img src="Image/product-picture_01.jpg" width="500px"> -->
-<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/product-picture_01.jpg" width="500px">
+<!-- <img src="Image/product-picture_01.jpg" width="600px"> -->
+<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/product-picture_01.jpg" width="600px">
 </div>
 
 [English README is here.](https://github.com/mar-electronica/ME2401-USBJTAG/blob/main/README-en.md)
@@ -13,7 +13,7 @@ FT2232H搭載USBシリアル変換モジュール
 # 概要
 <div align="center">
 <!-- <img src="Image/block-diagram_01.png" width="800px"> -->
-<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/block-diagram_01.png" width="500px">
+<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/block-diagram_01.png" width="600px">
 </div>
 
 - FTDI製FT2232H搭載USBシリアル変換モジュール
@@ -58,41 +58,76 @@ FT2232H搭載USBシリアル変換モジュール
 
 # 製品構成
 ## 同梱品
-| #  | 名称                            | 個数 |
-|----|---------------------------------|------|
-| 1  | メイン基板                      | 1    |
-| 2  | 上面カバー                      | 1    |
-| 3  | 底面カバー                      | 1    |
-| 4  | JTAG/SWD変換基板                | 1    |
-| 5  | ナイロンスペーサー M3*5mm       | 4    |
-| 6  | ナイロンスペーサー M3*10mm      | 4    |
-| 7  | ワッシャ付きネジ M3*30mm        | 4    |
-| 8  | ナット M3                       | 4    |
-| 9  | ゴム足                          | 4    |
-| 10 | ジャンパソケット                | 3    |
-| ~11~ | ~USB Type-A to Type-Cケーブル 1m~ | ~1~    |
-| ~12~ | ~JTAG 20Pin リボンケーブル 30cm~  | ~1~    |
-
-## パッケージ
-- W160mm x D120mm x H20mm
-
 <div align="center">
-<!-- <img src="Image/package-picture_01.jpg" width="500px"> -->
-<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/package-picture_01.jpg" width="500px">
+
+| #  | 名称                      | 個数 |
+|----|---------------------------|------|
+| 1  | メイン基板                | 1    |
+| 2  | 上面カバー                | 1    |
+| 3  | 底面カバー                | 1    |
+| 4  | JTAG/SWD変換基板          | 1    |
+| 5  | 樹脂スペーサー(M3*5mm)    | 4    |
+| 6  | 樹脂スペーサー(M3*10mm)   | 4    |
+| 7  | ワッシャ付きネジ(M3*30mm) | 4    |
+| 8  | ナット(M3)                | 4    |
+| 9  | ゴム足                    | 4    |
+| 10 | ジャンパソケット          | 3    |
+
 </div>
 
+## パッケージ
+### パッケージ外観
+- W160mm x D120mm x H20mm
+<div align="center">
+<!-- <img src="Image/package-picture_01.jpg" width="600px"> -->
+<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/package-picture_01.jpg" width="600px">
+</div>
+
+### パッケージ詳細
+<div align="center">
+<!-- <img src="Image/package-picture_02.png" width="600px"> -->
+<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/package-picture_02.png" width="600px">
+</div>
+
+### ラベル情報
+<div align="center">
+<!-- <img src="Image/label-picture_01.png" width="600px"> -->
+<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/label-picture_01.png" width="600px">
+</div>
+
+<div align="center">
+
+| 表示内容         | 表示例           | 備考               |
+|------------------|------------------|--------------------|
+| (1) Product Name | USB-JTAG/UART    | 固定               |
+| (2) Device Name  | ME2401-USBJTAG01 | 固定               |
+| (3) QR Code      | ->               | 固定、GitHub URL   |
+| (4) ID No.       | NNNN             | 可変、管理用ID番号 |
+
+</div>
+
+
 ## 組立方法
+下記の順番で重ねて、「#7 ワッシャ付きネジ(M3*30mm)」と「#8 ナット(M3)」で固定します。
+- #2 上面カバー
+- #6 樹脂スペーサー(M3*10mm)
+- #1 メイン基板
+- #5 樹脂スペーサー(M3*5mm)
+- #3 底面カバー
+- #9 ゴム足
 
-TBD
-
+<div align="center">
+<img src="Image/assembly-picture_01.png" width="600px">
+<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/assembly-picture_01.png" width="600px">
+</div>
 
 # 使用方法
 ## パソコンとの接続
 パソコンとUSB Type-A to Type-Cケーブルで接続してください。
 
 <div align="center">
-<!-- <img src="Image/usage-pc_01.jpg" width="500px"> -->
-<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-pc_01.jpg" width="500px">
+<!-- <img src="Image/usage-pc_01.jpg" width="600px"> -->
+<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-pc_01.jpg" width="600px">
 </div>
 
 ## デバイスドライバのインストールと設定
@@ -100,7 +135,7 @@ TBD
 #### Windows
 Windows10以上のパソコンでは、デバイスドライバはインストール済か、自動でインストールされます。
 
-自動で認識しない場合は、FTDI社のHPよりドライバをダウンロードしてインストールしてください。
+自動で認識しない場合は、FTDI社のサイトからドライバをダウンロードしてインストールしてください。
 
 [Drivers - FTDI](https://ftdichip.com/drivers/)
 
@@ -115,14 +150,14 @@ Windowsのパソコンを使用する場合、デバイスドライバを以下の手順で入れ替える。
     - [Zadig - USB driver installation made easy](https://zadig.akeo.ie/)
 2. パソコンにUSB-JTAG/UARTを接続した状態でZadigを実行
 3. "Options->List All Devices"を選択
-<BR><img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-driver_01.png" width="500px">
+<BR><img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-driver_01.png" width="600px">
 4. ""を選択
-<BR><img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-driver_02.png" width="500px">
+<BR><img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-driver_02.png" width="600px">
     - "(Interface 1)"は入れ替えない
 5. "FTDIBUS"から"WinUSB"に入れ替え
-<BR><img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-driver_03.png" width="500px">
+<BR><img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-driver_03.png" width="600px">
 6. Driver が"NONE" になっている場合、"Replace Driver"をクリックして"NONE"から"WinUSB"に入れ替え
-<BR><img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-driver_04.png" width="500px">
+<BR><img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-driver_04.png" width="600px">
 
 #### Linux
 Linuxのパソコンを使用する場合、USB-JTAG/UARTを一般ユーザで使用できるようにするために、以下の手順でudev設定を追加する。
@@ -172,25 +207,25 @@ TBD
 - ボード上のピンヘッダ(JP2)で選択
 
 <div align="center">
-<!-- <img src="Image/usage-uart_01.jpg" width="500px"> -->
-<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-uart_01.jpg" width="500px">
+<!-- <img src="Image/usage-uart_01.jpg" width="600px"> -->
+<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-uart_01.jpg" width="600px">
 </div>
 
 - TTLとして使用する場合(TBD)
 <div align="center">
-<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-uart_02.jpg" width="500px">
+<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-uart_02.jpg" width="600px">
 </div>
 
 - RS-232として使用する場合(TBD)
 <div align="center">
-<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-uart_03.jpg" width="500px">
+<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-uart_03.jpg" width="600px">
 </div>
 
 ### TTL
 #### コネクタ
 - CN3のピンヘッダに接続して使用します。
 <div align="center">
-<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-uart_04.jpg" width="500px">
+<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-uart_04.jpg" width="600px">
 </div>
 
 #### TTL使用時の電圧
@@ -200,28 +235,28 @@ TBD
 - 1.1-5.5Vの範囲で電圧を外部から供給可能
 
 <div align="center">
-<!-- <img src="Image/usage-uart_05.jpg" width="500px"> -->
-<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-uart_05.jpg" width="500px">
+<!-- <img src="Image/usage-uart_05.jpg" width="600px"> -->
+<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-uart_05.jpg" width="600px">
 </div>
 
 ##### 1.8Vで使用する場合(TBD)
 <div align="center">
-<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-uart_06.jpg" width="500px">
+<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-uart_06.jpg" width="600px">
 </div>
 
 ##### 3.3Vで使用する場合(TBD)
 <div align="center">
-<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-uart_07.jpg" width="500px">
+<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-uart_07.jpg" width="600px">
 </div>
 
 ##### 5Vで使用する場合(TBD)
 <div align="center">
-<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-uart_08.jpg" width="500px">
+<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-uart_08.jpg" width="600px">
 </div>
 
 ##### 外部から電圧を供給する場合
 <div align="center">
-<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-uart_09.jpg" width="500px">
+<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-uart_09.jpg" width="600px">
 </div>
 
 ※1.1-5.5Vの範囲でご使用下さい。
@@ -232,8 +267,8 @@ TBD
 - CN4のD-Sub 9Pinコネクタに接続して使用します。
 
 <div align="center">
-<!-- <img src="Image/usage-uart_10.jpg" width="500px"> -->
-<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-uart_10.jpg" width="500px">
+<!-- <img src="Image/usage-uart_10.jpg" width="600px"> -->
+<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-uart_10.jpg" width="600px">
 </div>
 
 ### LED
@@ -242,8 +277,8 @@ UARTの送受信に応じてLEDが点灯します。
 - 受信：RXLED(緑)
 
 <div align="center">
-<!-- <img src="Image/usage-uart_11.jpg" width="500px"> -->
-<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-uart_11.jpg" width="500px">
+<!-- <img src="Image/usage-uart_11.jpg" width="600px"> -->
+<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-uart_11.jpg" width="600px">
 </div>
 
 # サポート
