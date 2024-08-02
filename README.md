@@ -4,16 +4,14 @@ USB-JTAG/UART
 FT2232H“‹ÚUSBƒVƒŠƒAƒ‹•ÏŠ·ƒ‚ƒWƒ…[ƒ‹
 
 <div align="center">
-<!-- <img src="Image/product-picture_01.jpg" width="600px"> -->
-<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/product-picture_01.jpg" width="600px">
+<img src="./Image/product-picture_01.jpg" width="600px">
 </div>
 
-[English README is here.](https://github.com/mar-electronica/ME2401-USBJTAG/blob/main/README-en.md)
+[English README is here.](./README-en.md)
 
 # ŠT—v
 <div align="center">
-<!-- <img src="Image/block-diagram_01.png" width="800px"> -->
-<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/block-diagram_01.png" width="600px">
+<img src="./Image/block-diagram_01.png" width="800px">
 </div>
 
 - FTDI»FT2232H“‹ÚUSBƒVƒŠƒAƒ‹•ÏŠ·ƒ‚ƒWƒ…[ƒ‹
@@ -79,20 +77,17 @@ FT2232H“‹ÚUSBƒVƒŠƒAƒ‹•ÏŠ·ƒ‚ƒWƒ…[ƒ‹
 ### ƒpƒbƒP[ƒWŠOŠÏ
 - W160mm x D120mm x H20mm
 <div align="center">
-<!-- <img src="Image/package-picture_01.jpg" width="600px"> -->
-<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/package-picture_01.jpg" width="600px">
+<img src="./Image/package-picture_01.jpg" width="600px">
 </div>
 
 ### ƒpƒbƒP[ƒWÚ×
 <div align="center">
-<!-- <img src="Image/package-picture_02.png" width="600px"> -->
-<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/package-picture_02.png" width="600px">
+<img src="./Image/package-picture_02.png" width="600px">
 </div>
 
 ### ƒ‰ƒxƒ‹î•ñ
 <div align="center">
-<!-- <img src="Image/label-picture_01.png" width="600px"> -->
-<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/label-picture_01.png" width="600px">
+<img src="./Image/label-picture_01.png" width="600px">
 </div>
 
 <div align="center">
@@ -117,8 +112,7 @@ FT2232H“‹ÚUSBƒVƒŠƒAƒ‹•ÏŠ·ƒ‚ƒWƒ…[ƒ‹
 - #9 ƒSƒ€‘«
 
 <div align="center">
-<img src="Image/assembly-picture_01.png" width="600px">
-<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/assembly-picture_01.png" width="600px">
+<img src="./Image/assembly-picture_01.png" width="800px">
 </div>
 
 # Žg—p•û–@
@@ -126,8 +120,7 @@ FT2232H“‹ÚUSBƒVƒŠƒAƒ‹•ÏŠ·ƒ‚ƒWƒ…[ƒ‹
 ƒpƒ\ƒRƒ“‚ÆUSB Type-A to Type-CƒP[ƒuƒ‹‚ÅÚ‘±‚µ‚Ä‚­‚¾‚³‚¢B
 
 <div align="center">
-<!-- <img src="Image/usage-pc_01.jpg" width="600px"> -->
-<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-pc_01.jpg" width="600px">
+<img src="./Image/usage-pc_01.jpg" width="600px">
 </div>
 
 ## ƒfƒoƒCƒXƒhƒ‰ƒCƒo‚ÌƒCƒ“ƒXƒg[ƒ‹‚ÆÝ’è
@@ -135,7 +128,7 @@ FT2232H“‹ÚUSBƒVƒŠƒAƒ‹•ÏŠ·ƒ‚ƒWƒ…[ƒ‹
 #### Windows
 Windows10ˆÈã‚Ìƒpƒ\ƒRƒ“‚Å‚ÍAƒfƒoƒCƒXƒhƒ‰ƒCƒo‚ÍƒCƒ“ƒXƒg[ƒ‹Ï‚©AŽ©“®‚ÅƒCƒ“ƒXƒg[ƒ‹‚³‚ê‚Ü‚·B
 
-Ž©“®‚Å”FŽ¯‚µ‚È‚¢ê‡‚ÍAFTDIŽÐ‚ÌƒTƒCƒg‚©‚çƒhƒ‰ƒCƒo‚ðƒ_ƒEƒ“ƒ[ƒh‚µ‚ÄƒCƒ“ƒXƒg[ƒ‹‚µ‚Ä‚­‚¾‚³‚¢B
+Ž©“®‚Å”FŽ¯‚µ‚È‚¢ê‡‚ÍAFTDIŽÐ‚Ìƒz[ƒ€ƒy[ƒW‚©‚çƒfƒoƒCƒXƒhƒ‰ƒCƒo‚ðƒ_ƒEƒ“ƒ[ƒh‚µ‚ÄƒCƒ“ƒXƒg[ƒ‹‚µ‚Ä‚­‚¾‚³‚¢B
 
 [Drivers - FTDI](https://ftdichip.com/drivers/)
 
@@ -146,33 +139,39 @@ Ubuntu 11.10, kernel 3.0.0-19ˆÈ~‚Ìƒpƒ\ƒRƒ“‚Å‚ÍAƒfƒoƒCƒXƒhƒ‰ƒCƒo‚ÍƒCƒ“ƒXƒg[ƒ‹
 #### Windows
 Windows‚Ìƒpƒ\ƒRƒ“‚ðŽg—p‚·‚éê‡AƒfƒoƒCƒXƒhƒ‰ƒCƒo‚ðˆÈ‰º‚ÌŽè‡‚Å“ü‚ê‘Ö‚¦‚éB
 
-1. ƒhƒ‰ƒCƒo“ü‚ê‘Ö‚¦ƒc[ƒ‹(Zadig)‚ðƒ_ƒEƒ“ƒ[ƒh
+1. ƒfƒoƒCƒXƒhƒ‰ƒCƒo“ü‚ê‘Ö‚¦ƒc[ƒ‹‚ÌZadig‚ðƒ_ƒEƒ“ƒ[ƒh
     - [Zadig - USB driver installation made easy](https://zadig.akeo.ie/)
-2. ƒpƒ\ƒRƒ“‚ÉUSB-JTAG/UART‚ðÚ‘±‚µ‚½ó‘Ô‚ÅZadig‚ðŽÀs
-3. "Options->List All Devices"‚ð‘I‘ð
-<BR><img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-driver_01.png" width="600px">
-4. ""‚ð‘I‘ð
-<BR><img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-driver_02.png" width="600px">
-    - "(Interface 1)"‚Í“ü‚ê‘Ö‚¦‚È‚¢
-5. "FTDIBUS"‚©‚ç"WinUSB"‚É“ü‚ê‘Ö‚¦
-<BR><img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-driver_03.png" width="600px">
-6. Driver ‚ª"NONE" ‚É‚È‚Á‚Ä‚¢‚éê‡A"Replace Driver"‚ðƒNƒŠƒbƒN‚µ‚Ä"NONE"‚©‚ç"WinUSB"‚É“ü‚ê‘Ö‚¦
-<BR><img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-driver_04.png" width="600px">
+	- [An usage guide for Zadig is available HERE.](https://github.com/pbatard/libwdi/wiki/Zadig)
+2. ƒpƒ\ƒRƒ“‚ÉME2401-USBJTAG01‚ðÚ‘±‚µ‚½ó‘Ô‚Åƒ_ƒEƒ“ƒ[ƒh‚µ‚½Zadig(zadig-*.*.exe)‚ðŽÀs
+3. ƒ†[ƒU[ƒAƒJƒEƒ“ƒg§Œäƒvƒƒ“ƒvƒg‚ª•\Ž¦‚³‚ê‚½‚ç"‚Í‚¢"‚ð‘I‘ð
+<BR><img src="https://github.com/pbatard/libwdi/wiki/images/Zadig_01.png" width="600px">
+4. ƒƒjƒ…[ƒo[‚Ì"Options"‚©‚ç"List All Devices"‚ð‘I‘ð
+<BR><img src="./Image/usage-driver_01.png" width="600px">
+5. ƒhƒƒbƒvƒ_ƒEƒ“ƒŠƒXƒg‚©‚ç"ME2401-USBJTAG01(Interface 0)"‚ð‘I‘ð
+<BR><img src="./Image/usage-driver_02.png" width="600px">
+6. "WinUSB"‚ð‘I‘ð
+<BR><img src="./Image/usage-driver_03.png" width="600px">
+7. "Replace Driver"‚ðƒNƒŠƒbƒN‚µ‚ÄƒfƒoƒCƒXƒhƒ‰ƒCƒo‚ð“ü‚ê‘Ö‚¦
+<BR><img src="./Image/usage-driver_04.png" width="600px">
+
+¦ ƒfƒoƒCƒXƒhƒ‰ƒCƒo‚Ì“ü‚ê‘Ö‚¦‚Í"ME2401-USBJTAG01(Interface 0)"‚Ì‚ÝŽÀŽ{‚µ‚Ä‚­‚¾‚³‚¢B
+
+¦ "ME2401-USBJTAG01(Interface 1)"‚ÆŠÔˆá‚í‚È‚¢‚æ‚¤‚É’ˆÓ‚µ‚Ä‚­‚¾‚³‚¢B
 
 #### Linux
-Linux‚Ìƒpƒ\ƒRƒ“‚ðŽg—p‚·‚éê‡AUSB-JTAG/UART‚ðˆê”Êƒ†[ƒU‚ÅŽg—p‚Å‚«‚é‚æ‚¤‚É‚·‚é‚½‚ß‚ÉAˆÈ‰º‚ÌŽè‡‚ÅudevÝ’è‚ð’Ç‰Á‚·‚éB
+Linux‚Ìƒpƒ\ƒRƒ“‚ðŽg—p‚·‚éê‡AME2401-USBJTAG01‚ðˆê”Êƒ†[ƒU‚ÅŽg—p‚Å‚«‚é‚æ‚¤‚É‚·‚é‚½‚ß‚ÉAˆÈ‰º‚ÌŽè‡‚ÅÝ’è‚ð’Ç‰Á‚·‚éB
 
-1. /etc/udev/rules.d/99-ttyusb.rules‚Æ‚¢‚¤ƒtƒ@ƒCƒ‹‚ðV‹Kì¬‚µ‚ÄˆÈ‰º‚Ì“à—e‚ð‹LÚ
-```
-# JTAG Adapter
+1. /etc/udev/rules.d/99-me2401-usbjtag01.rules‚Æ‚¢‚¤ƒtƒ@ƒCƒ‹‚ðì¬‚µ‚ÄˆÈ‰º‚ð‹LÚ
+```shell
+# ME2401-USBJTAG01
 ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6010", MODE="0666"
 ```
-2. ˆÈ‰º‚ÌƒRƒ}ƒ“ƒh‚ÅudevÝ’è‚ð”½‰f
-```
+2. ˆÈ‰º‚ÌƒRƒ}ƒ“ƒh‚ðŽÀs‚µ‚ÄÝ’è‚ð”½‰f
+```shell
 sudo udevadm trigger
 ```
 
-USB-JTAG/UART‚ðLinux‚Ìƒpƒ\ƒRƒ“‚ÉÚ‘±‚·‚é‚ÆA
+ME2401-USBJTAG01‚ðLinux‚Ìƒpƒ\ƒRƒ“‚ÉÚ‘±‚·‚é‚ÆA
 /dev/ttyUSB0(”Žš‚ÍŠÂ‹«‚ÉˆË‘¶)‚Ì‚æ‚¤‚ÈƒfƒoƒCƒXƒtƒ@ƒCƒ‹‚ªì¬‚³‚ê‚Ü‚·B
 ã‹L‚ÌÝ’è‚ðs‚¤‚±‚Æ‚ÅAƒfƒoƒCƒXƒtƒ@ƒCƒ‹‚ªˆê”Êƒ†[ƒU‚Å‚àƒAƒNƒZƒX‰Â”\‚É‚È‚è‚Ü‚·B
 
@@ -207,25 +206,24 @@ TBD
 - ƒ{[ƒhã‚Ìƒsƒ“ƒwƒbƒ_(JP2)‚Å‘I‘ð
 
 <div align="center">
-<!-- <img src="Image/usage-uart_01.jpg" width="600px"> -->
-<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-uart_01.jpg" width="600px">
+<img src="./Image/usage-uart_01.jpg" width="600px">
 </div>
 
 - TTL‚Æ‚µ‚ÄŽg—p‚·‚éê‡(TBD)
 <div align="center">
-<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-uart_02.jpg" width="600px">
+<img src="./Image/usage-uart_02.jpg" width="600px">
 </div>
 
 - RS-232‚Æ‚µ‚ÄŽg—p‚·‚éê‡(TBD)
 <div align="center">
-<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-uart_03.jpg" width="600px">
+<img src="./Image/usage-uart_03.jpg" width="600px">
 </div>
 
 ### TTL
 #### ƒRƒlƒNƒ^
 - CN3‚Ìƒsƒ“ƒwƒbƒ_‚ÉÚ‘±‚µ‚ÄŽg—p‚µ‚Ü‚·B
 <div align="center">
-<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-uart_04.jpg" width="600px">
+<img src="./Image/usage-uart_04.jpg" width="600px">
 </div>
 
 #### TTLŽg—pŽž‚Ì“dˆ³
@@ -235,28 +233,27 @@ TBD
 - 1.1-5.5V‚Ì”ÍˆÍ‚Å“dˆ³‚ðŠO•”‚©‚ç‹Ÿ‹‹‰Â”\
 
 <div align="center">
-<!-- <img src="Image/usage-uart_05.jpg" width="600px"> -->
-<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-uart_05.jpg" width="600px">
+<img src="./Image/usage-uart_05.jpg" width="600px">
 </div>
 
 ##### 1.8V‚ÅŽg—p‚·‚éê‡(TBD)
 <div align="center">
-<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-uart_06.jpg" width="600px">
+<img src="./Image/usage-uart_06.jpg" width="600px">
 </div>
 
 ##### 3.3V‚ÅŽg—p‚·‚éê‡(TBD)
 <div align="center">
-<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-uart_07.jpg" width="600px">
+<img src="./Image/usage-uart_07.jpg" width="600px">
 </div>
 
 ##### 5V‚ÅŽg—p‚·‚éê‡(TBD)
 <div align="center">
-<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-uart_08.jpg" width="600px">
+<img src="./Image/usage-uart_08.jpg" width="600px">
 </div>
 
 ##### ŠO•”‚©‚ç“dˆ³‚ð‹Ÿ‹‹‚·‚éê‡
 <div align="center">
-<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-uart_09.jpg" width="600px">
+<img src="./Image/usage-uart_09.jpg" width="600px">
 </div>
 
 ¦1.1-5.5V‚Ì”ÍˆÍ‚Å‚²Žg—p‰º‚³‚¢B
@@ -267,8 +264,7 @@ TBD
 - CN4‚ÌD-Sub 9PinƒRƒlƒNƒ^‚ÉÚ‘±‚µ‚ÄŽg—p‚µ‚Ü‚·B
 
 <div align="center">
-<!-- <img src="Image/usage-uart_10.jpg" width="600px"> -->
-<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-uart_10.jpg" width="600px">
+<img src="./Image/usage-uart_10.jpg" width="600px">
 </div>
 
 ### LED
@@ -277,8 +273,7 @@ UART‚Ì‘—ŽóM‚É‰ž‚¶‚ÄLED‚ª“_“”‚µ‚Ü‚·B
 - ŽóMFRXLED(—Î)
 
 <div align="center">
-<!-- <img src="Image/usage-uart_11.jpg" width="600px"> -->
-<img src="https://github.com/mar-electronica/ME2401-USBJTAG/blob/work/Image/usage-uart_11.jpg" width="600px">
+<img src="./Image/usage-uart_11.jpg" width="600px">
 </div>
 
 # ƒTƒ|[ƒg
