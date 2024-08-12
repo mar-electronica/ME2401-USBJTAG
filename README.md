@@ -1,7 +1,7 @@
 # ME2401-USBJTAG
 USB-JTAG/UART
 
-FT2232H����USB�V���A���ϊ����W���[��
+FT2232H搭載USBシリアル変換モジュール
 
 <div align="center">
 <img src="./Image/product-picture_01.jpg" width="600px">
@@ -9,272 +9,306 @@ FT2232H����USB�V���A���ϊ����W���[��
 
 [English README is here.](./README-en.md)
 
-# �T�v
+# 概要
 <div align="center">
 <img src="./Image/block-diagram_01.png" width="800px">
 </div>
 
-- FTDI��FT2232H����USB�V���A���ϊ����W���[��
-- JTAG��UART���e1ch�����Ɏg�p�\
-- JTAG��Vref�d����1.1-5.5V���T�|�[�g
-- JTAG-SWD�ϊ����W���[���t��
-- [OpenOCD](https://openocd.org/)���g�p����JTAG�f�o�b�K�Ƃ��Ďg�p�\
-- UART�̃��W�b�N���x����TTL(1.1-5.5V)��RS-232���T�|�[�g
+- FTDI製FT2232H搭載USBシリアル変換モジュール
+- JTAGとUARTが同時に使用可能
+- JTAGのVref電圧は1.1-5.5Vをサポート
+- JTAG-SWD変換モジュール付属
+- [OpenOCD](https://openocd.org/)を使用してJTAGデバッガとして使用可能
+- UARTのロジックレベルはTTL(1.1-5.5V)とRS-232をサポート
 
-# �d�l
+# 仕様
 - USB
   - USB2.0 High Speed 480Mbps
-  - �o�X�p���[����
-  - Type-C�R�l�N�^
+  - バスパワー動作
+  - Type-Cコネクタ
 - JTAG
-  - 2.54mm 20pin�R�l�N�^
-    - 20-pin ARM Standard JTAG�݊�
-  - Vref�d��
-    - 1.1V-5.5V�͈̔͂Ń��t�@�����X�d�����O�����狟���\
+  - 2.54mm 20pinコネクタ
+    - 20-pin ARM Standard JTAG互換
+  - Vref電圧
+    - 1.1V-5.5Vの範囲でリファレンス電圧を外部から供給可能
 - SWD
-  - SWD�ϊ����W���[�����g�p����SWD�ł̐ڑ����\
-  - 3�X�e�[�g�o�b�t�@�ɂ��SWDIO�̑o��������
-  - 1.27mm 10pin�R�l�N�^
-    - Cortex Debug (10-pin)�݊�
-  - 2.54mm�s���w�b�_
-    - SWDIO/SWCLK/nSRST���T�|�[�g
-  - Vref�d��
-    - 1.1V-5.5V�͈̔͂Ń��t�@�����X�d�����O�����狟���\
+  - SWD変換モジュールを使用してSWDでの接続が可能
+  - 3ステートバッファによるSWDIOの双方向制御
+  - 1.27mm 10pinコネクタ
+    - Cortex Debug (10-pin)互換
+  - 2.54mmピンヘッダ
+    - SWDIO/SWCLK/nSRSTをサポート
+  - Vref電圧
+    - 1.1V-5.5Vの範囲でリファレンス電圧を外部から供給可能
 - UART
-  - ���W�b�N���x����TTL(1.1-5.5V)��RS-232��r�����p�\
-    - �{�[�h��̃s���w�b�_�őI��
+  - ロジックレベルはTTL(1.1-5.5V)とRS-232を排他利用可能
+    - ボード上のピンヘッダで選択
   - TTL
-    - 2.54mm�s���w�b�_
-      - TXD/RXD/RTS/CTS���T�|�[�g
-    - �d��
-      - 1.8V/3.3V/5V�̓d�����{�[�h��ŋ����\
-      - 1.1-5.5V�͈̔͂œd�����O�����狟���\
+    - 2.54mmピンヘッダ
+      - TXD/RXD/RTS/CTSをサポート
+    - 電圧
+      - 1.8V/3.3V/5Vの電圧をボード上で供給可能
+      - 1.1-5.5Vの範囲で電圧を外部から供給可能
   - RS-232
-    - RS-232�̃��C���h���C�o�E���V�[�o����
-- ���@
+    - D-Sub 9pinコネクタ
+    - RS-232のラインドライバ・レシーバ搭載
+- 寸法
   - W81mm x D50mm x H35mm
 
-# ���i�\��
-## �����i
+<div align="center">
+<img src="./Image/product-drawing_01.png" width="800px">
+</div>
+
+# 製品構成
+## 同梱品
 <div align="center">
 
-| #  | ����                      | �� |
+| #  | 名称                      | 個数 |
 |----|---------------------------|------|
-| 1  | ���C�����                | 1    |
-| 2  | ��ʃJ�o�[                | 1    |
-| 3  | ��ʃJ�o�[                | 1    |
-| 4  | JTAG/SWD�ϊ����          | 1    |
-| 5  | �����X�y�[�T�[(M3*5mm)    | 4    |
-| 6  | �����X�y�[�T�[(M3*10mm)   | 4    |
-| 7  | ���b�V���t���l�W(M3*30mm) | 4    |
-| 8  | �i�b�g(M3)                | 4    |
-| 9  | �S����                    | 4    |
-| 10 | �W�����p�\�P�b�g          | 3    |
+| 1  | メイン基板                | 1    |
+| 2  | 上面カバー                | 1    |
+| 3  | 底面カバー                | 1    |
+| 4  | JTAG/SWD変換基板          | 1    |
+| 5  | 樹脂スペーサー(M3*5mm)    | 4    |
+| 6  | 樹脂スペーサー(M3*10mm)   | 4    |
+| 7  | ワッシャ付きネジ(M3*30mm) | 4    |
+| 8  | ナット(M3)                | 4    |
+| 9  | ゴム足                    | 4    |
+| 10 | ジャンパソケット          | 2    |
 
 </div>
 
-## �p�b�P�[�W
-### �p�b�P�[�W�O��
-- W160mm x D120mm x H20mm
+## パッケージ
+### パッケージ外観
+- W160mm x D120mm x H20mm 段ボール箱
 <div align="center">
 <img src="./Image/package-picture_01.jpg" width="600px">
 </div>
 
-### �p�b�P�[�W�ڍ�
+### パッケージ詳細
 <div align="center">
 <img src="./Image/package-picture_02.png" width="600px">
 </div>
 
-### ���x�����
+### ラベル情報
 <div align="center">
 <img src="./Image/label-picture_01.png" width="600px">
 </div>
 
 <div align="center">
 
-| �\�����e         | �\����           | ���l               |
+| 表示内容         | 表示例           | 備考               |
 |------------------|------------------|--------------------|
-| (1) Product Name | USB-JTAG/UART    | �Œ�               |
-| (2) Device Name  | ME2401-USBJTAG01 | �Œ�               |
-| (3) QR Code      | ->               | �Œ�AGitHub URL   |
-| (4) ID No.       | NNNN             | �ρA�Ǘ��pID�ԍ� |
+| (1) Product Name | USB-JTAG/UART    | 固定               |
+| (2) Device Name  | ME2401-USBJTAG01 | 固定               |
+| (3) QR Code      | ->               | 固定、GitHub URL   |
+| (4) ID No.       | NNNN             | 可変、管理用ID番号 |
 
 </div>
 
 
-## �g�����@
-���L�̏��Ԃŏd�˂āA�u#7 ���b�V���t���l�W(M3*30mm)�v�Ɓu#8 �i�b�g(M3)�v�ŌŒ肵�܂��B
-- #2 ��ʃJ�o�[
-- #6 �����X�y�[�T�[(M3*10mm)
-- #1 ���C�����
-- #5 �����X�y�[�T�[(M3*5mm)
-- #3 ��ʃJ�o�[
-- #9 �S����
+## 組立方法
+下記の順番で重ねて、「#7 ワッシャ付きネジ(M3*30mm)」と「#8 ナット(M3)」で固定します。
+- #2 上面カバー
+- #6 樹脂スペーサー(M3*10mm)
+- #1 メイン基板
+- #5 樹脂スペーサー(M3*5mm)
+- #3 底面カバー
+- #9 ゴム足
 
 <div align="center">
 <img src="./Image/assembly-picture_01.png" width="800px">
 </div>
 
-# �g�p���@
-## �p�\�R���Ƃ̐ڑ�
-�p�\�R����USB Type-A to Type-C�P�[�u���Őڑ����Ă��������B
+# 使用方法
+## パソコンとの接続
+パソコンとUSB Type-A to Type-Cケーブルで接続してください。
 
 <div align="center">
 <img src="./Image/usage-pc_01.jpg" width="600px">
 </div>
 
-## �f�o�C�X�h���C�o�̃C���X�g�[���Ɛݒ�
-### �C���X�g�[��
+## デバイスドライバのインストールと設定
+### インストール
 #### Windows
-Windows10�ȏ�̃p�\�R���ł́A�f�o�C�X�h���C�o�̓C���X�g�[���ς��A�����ŃC���X�g�[������܂��B
+Windows10以上のパソコンでは、デバイスドライバはインストール済か、自動でインストールされます。
 
-�����ŔF�����Ȃ��ꍇ�́AFTDI�Ђ̃z�[���y�[�W����f�o�C�X�h���C�o���_�E�����[�h���ăC���X�g�[�����Ă��������B
+自動で認識しない場合は、FTDI社のホームページからデバイスドライバをダウンロードしてインストールしてください。
 
 [Drivers - FTDI](https://ftdichip.com/drivers/)
 
 #### Linux
-Ubuntu 11.10, kernel 3.0.0-19�ȍ~�̃p�\�R���ł́A�f�o�C�X�h���C�o�̓C���X�g�[���ςł��B
+Ubuntu 11.10, kernel 3.0.0-19以降のパソコンでは、デバイスドライバはインストール済です。
 
-### �ݒ�
+### 設定
 #### Windows
-Windows�̃p�\�R�����g�p����ꍇ�A�f�o�C�X�h���C�o���ȉ��̎菇�œ���ւ���B
+Windowsのパソコンを使用する場合、デバイスドライバを以下の手順で入れ替える。
 
-1. �f�o�C�X�h���C�o����ւ��c�[����Zadig���_�E�����[�h
+1. デバイスドライバ入れ替えツールのZadigをダウンロード
     - [Zadig - USB driver installation made easy](https://zadig.akeo.ie/)
 	- [An usage guide for Zadig is available HERE.](https://github.com/pbatard/libwdi/wiki/Zadig)
-2. �p�\�R����ME2401-USBJTAG01��ڑ�������ԂŃ_�E�����[�h����Zadig(zadig-*.*.exe)�����s
-3. ���[�U�[�A�J�E���g����v�����v�g���\�����ꂽ��"�͂�"��I��
+2. パソコンにME2401-USBJTAG01を接続した状態でダウンロードしたZadig(zadig-*.*.exe)を実行
+3. ユーザーアカウント制御プロンプトが表示されたら"はい"を選択
 <BR><img src="https://github.com/pbatard/libwdi/wiki/images/Zadig_01.png" width="600px">
-4. ���j���[�o�[��"Options"����"List All Devices"��I��
+4. メニューバーの"Options"から"List All Devices"を選択
 <BR><img src="./Image/usage-driver_01.png" width="600px">
-5. �h���b�v�_�E�����X�g����"ME2401-USBJTAG01(Interface 0)"��I��
+5. ドロップダウンリストから"ME2401-USBJTAG01(Interface 0)"を選択
 <BR><img src="./Image/usage-driver_02.png" width="600px">
-6. "WinUSB"��I��
+6. "WinUSB"を選択
 <BR><img src="./Image/usage-driver_03.png" width="600px">
-7. "Replace Driver"���N���b�N���ăf�o�C�X�h���C�o�����ւ�
+7. "Replace Driver"をクリックしてデバイスドライバを入れ替え
 <BR><img src="./Image/usage-driver_04.png" width="600px">
 
-�� �f�o�C�X�h���C�o�̓���ւ���"ME2401-USBJTAG01(Interface 0)"�̂ݎ��{���Ă��������B
+※ デバイスドライバの入れ替えは"ME2401-USBJTAG01(Interface 0)"のみ実施してください。
 
-�� "ME2401-USBJTAG01(Interface 1)"�ƊԈ��Ȃ��悤�ɒ��ӂ��Ă��������B
+※ "ME2401-USBJTAG01(Interface 1)"と間違わないように注意してください。
 
 #### Linux
-Linux�̃p�\�R�����g�p����ꍇ�AME2401-USBJTAG01����ʃ��[�U�Ŏg�p�ł���悤�ɂ��邽�߂ɁA�ȉ��̎菇�Őݒ��ǉ�����B
+Linuxのパソコンを使用する場合、ME2401-USBJTAG01を一般ユーザで使用できるようにするために、以下の手順で設定を追加する。
 
-1. /etc/udev/rules.d/99-me2401-usbjtag01.rules�Ƃ����t�@�C�����쐬���Ĉȉ����L��
+1. /etc/udev/rules.d/99-me2401-usbjtag01.rulesというファイルを作成して以下を記載
 ```shell
 # ME2401-USBJTAG01
 ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6010", MODE="0666"
 ```
-2. �ȉ��̃R�}���h�����s���Đݒ�𔽉f
+2. 以下のコマンドを実行して設定を反映
 ```shell
 sudo udevadm trigger
 ```
 
-ME2401-USBJTAG01��Linux�̃p�\�R���ɐڑ�����ƁA
-/dev/ttyUSB0(�����͊��Ɉˑ�)�̂悤�ȃf�o�C�X�t�@�C�����쐬����܂��B
-��L�̐ݒ���s�����ƂŁA�f�o�C�X�t�@�C������ʃ��[�U�ł��A�N�Z�X�\�ɂȂ�܂��B
+ME2401-USBJTAG01をLinuxのパソコンに接続すると、
+/dev/ttyUSB0(数字は環境に依存)のようなデバイスファイルが作成されます。
+上記の設定を行うことで、デバイスファイルが一般ユーザでもアクセス可能になります。
 
-## JTAG
-### OpenOCD
-TBD
+以下のコマンドでME2401-USBJTAG01がどのデバイスファイルに割り当てられたかを確認することが可能です。
+```shell
+dmesg | grep -i usb
+```
 
-### GDB����̐ڑ�
-TBD
+
+## OpenOCDによるデバッグ
+### システム構成
+
+### OpenOCDの入手
+OpenOCD
+[Open On-Chip Debugger](https://openocd.org/)
+
+#### Windows
+Windowsのパソコンを使用する場合、以下のホームページからビルド済みのバイナリ(xpack-openocd-x.xx.x-x-darwin-x64.tar.gz)が入手可能です。
+
+[Releases xpack-dev-tools/openocd-xpack](https://github.com/xpack-dev-tools/openocd-xpack/releases)
+
+#### Linux
+Linuxのパソコンを使用する場合、以下のコマンドでインストールが可能です。
+```shell
+apt-get install openocd
+```
+
+### GDBの入手
+デバッグするターゲットに応じたGDBを用意してください。
+
+### JTAGを使用したデバッグ
+1. OpenOCDの起動
+    - target.cfgはデバッグするターゲットに応じた設定ファイルを指定してください。
+```shell
+openocd -f me2401-usbjtag01-jtag.cfg -f target.cfg
+```
+2. GDBの起動
+3. 
+
+### SWDを使用したデバッグ
+SWD変換モジュールの接続
+
+1. OpenOCDの起動
+    - target.cfgはデバッグするターゲットに応じた設定ファイルを指定してください。
+```shell
+openocd -f me2401-usbjtag01-swd.cfg -f target.cfg
+```
+2. GDBの起動
+3. 
 
 ### LED
-JTAG�̃A�N�Z�X�ɉ�����LED���_�����܂��B
-- ALED(��)
+JTAG/SWDのアクセスに応じてLEDが点灯します。
+- ALED(黄)
 
-nSRST�A�T�[�g����LED���_�����܂��B
-- RLED(��)
-
-
-## SWD
-### SWD�ϊ����W���[���̐ڑ�
-TBD
-
-### OpenOCD
-TBD
-
-### GDB����̐ڑ�
-TBD
+nSRSTアサート時にLEDが点灯します。
+- RLED(赤)
 
 ## UART
-### ���W�b�N���x���̑I��
-- TTL(1.1-5.5V)��RS-232��r�����p�\
-- �{�[�h��̃s���w�b�_(JP2)�őI��
+### ロジックレベルの選択
+- TTL(1.1-5.5V)とRS-232を排他利用可能
+- ボード上のピンヘッダ(JP2)で選択
 
 <div align="center">
 <img src="./Image/usage-uart_01.jpg" width="600px">
 </div>
 
-- TTL�Ƃ��Ďg�p����ꍇ(TBD)
+- TTLとして使用する場合(TBD)
 <div align="center">
 <img src="./Image/usage-uart_02.jpg" width="600px">
 </div>
 
-- RS-232�Ƃ��Ďg�p����ꍇ(TBD)
+- RS-232として使用する場合(TBD)
 <div align="center">
 <img src="./Image/usage-uart_03.jpg" width="600px">
 </div>
 
 ### TTL
-#### �R�l�N�^
-- CN3�̃s���w�b�_�ɐڑ����Ďg�p���܂��B
+#### コネクタ
+- CN3のピンヘッダに接続して使用します。
 <div align="center">
 <img src="./Image/usage-uart_04.jpg" width="600px">
 </div>
 
-#### TTL�g�p���̓d��
-- TTL�g�p���̓d����1.1-5.5V�͈̔�
-- �{�[�h��̃s���w�b�_(JP1)�őI��
-- 1.8V/3.3V/5V�̓d�����{�[�h��ŋ����\
-- 1.1-5.5V�͈̔͂œd�����O�����狟���\
+#### TTL使用時の電圧
+- TTL使用時の電圧は1.1-5.5Vの範囲
+- ボード上のピンヘッダ(JP1)で選択
+- 1.8V/3.3V/5Vの電圧をボード上で供給可能
+- 1.1-5.5Vの範囲で電圧を外部から供給可能
 
 <div align="center">
 <img src="./Image/usage-uart_05.jpg" width="600px">
 </div>
 
-##### 1.8V�Ŏg�p����ꍇ(TBD)
+##### 1.8Vで使用する場合(TBD)
 <div align="center">
 <img src="./Image/usage-uart_06.jpg" width="600px">
 </div>
 
-##### 3.3V�Ŏg�p����ꍇ(TBD)
+##### 3.3Vで使用する場合(TBD)
 <div align="center">
 <img src="./Image/usage-uart_07.jpg" width="600px">
 </div>
 
-##### 5V�Ŏg�p����ꍇ(TBD)
+##### 5Vで使用する場合(TBD)
 <div align="center">
 <img src="./Image/usage-uart_08.jpg" width="600px">
 </div>
 
-##### �O������d������������ꍇ
+##### 外部から電圧を供給する場合
 <div align="center">
 <img src="./Image/usage-uart_09.jpg" width="600px">
 </div>
 
-��1.1-5.5V�͈̔͂ł��g�p�������B
+※1.1-5.5Vの範囲でご使用下さい。
 
 
 ### RS-232
-#### �R�l�N�^
-- CN4��D-Sub 9Pin�R�l�N�^�ɐڑ����Ďg�p���܂��B
+#### コネクタ
+- CN4のD-Sub 9pinコネクタに接続して使用します。
 
 <div align="center">
 <img src="./Image/usage-uart_10.jpg" width="600px">
 </div>
 
 ### LED
-UART�̑���M�ɉ�����LED���_�����܂��B
-- ���M�FTXLED(��)
-- ��M�FRXLED(��)
+UARTの送受信に応じてLEDが点灯します。
+- 送信：TXLED(緑)
+- 受信：RXLED(緑)
 
 <div align="center">
 <img src="./Image/usage-uart_11.jpg" width="600px">
 </div>
 
-# �T�|�[�g
-- �����s��񍐂�GitHub��Issues�ł��肢���܂��B
+# サポート
+- 質問や不具合報告はGitHubの[Issues](https://github.com/mar-electronica/ME2401-USBJTAG/issues)、またはinfo@mar-electronica.jp宛にお願いします。
