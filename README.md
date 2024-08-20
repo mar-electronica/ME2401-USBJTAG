@@ -174,8 +174,9 @@ Windowsのパソコンを使用する場合、デバイスドライバを以下�
 7. "Replace Driver"をクリックしてデバイスドライバを入れ替え
 <BR><img src="./Image/usage-driver_04.png" width="75%">
 
-<span style="color: red; ">※※※ "ME2401-USBJTAG01(Interface 0)"のみデバイスドライバを入れ替えてください。 ※※※</span><BR>
-<span style="color: red; ">※※※ "ME2401-USBJTAG01(Interface 1)"はデバイスドライバを入れ替えないでください。 ※※※</span>
+- (注意) "ME2401-USBJTAG01(Interface 0)"のみデバイスドライバを入れ替えてください。
+- (注意) "ME2401-USBJTAG01(Interface 1)"はデバイスドライバを入れ替えないでください。
+
 
 #### Linux
 Linuxのパソコンを使用する場合、ME2401-USBJTAG01を一般ユーザで使用できるようにするために、以下の手順で設定します。
@@ -229,9 +230,9 @@ apt-get install openocd
 ### JTAGを使用したデバッグ
 1. ターゲットとの接続
     - CN2とターゲットをケーブルで接続してください。
+    - (注意) ターゲットとの接続は必ず電源を切った状態で行ってください。
 <img src="./Image/usage-jtag_01.png" width="100%">
 
-<span style="color: red; ">※※※ ターゲットとの接続は必ず電源を切った状態で行ってください ※※※</span>
 
 2. OpenOCDの起動
     - -fオプションで[me2401-usbjtag01-jtag.cfg](./OpenOCD/me2401-usbjtag01-jtag.cfg)とターゲットに応じた設定ファイルを指定してください。
@@ -254,10 +255,10 @@ apt-get install openocd
 1. ターゲットとの接続
     - SWDアダプタをCN2に取り付けてください。
     - SWDアダプタとターゲットをケーブルで接続してください。
+    - (注意) SWDアダプタの接続は必ず電源を切った状態で行ってください。
+    - (注意) ターゲットとの接続は必ず電源を切った状態で行ってください。
 <img src="./Image/usage-swd_01.png" width="100%">
 
-<span style="color: red; ">※※※ SWDアダプタの接続は必ず電源を切った状態で行ってください ※※※</span><BR>
-<span style="color: red; ">※※※ ターゲットとの接続は必ず電源を切った状態で行ってください ※※※</span>
 
 2. OpenOCDの起動
     - -fオプションで[me2401-usbjtag01-swd.cfg](./OpenOCD/me2401-usbjtag01-swd.cfg)とターゲットに応じた設定ファイルを指定してください。
@@ -288,10 +289,10 @@ apt-get install openocd
 ### ロジックレベルの選択
 - TTL(1.1-5.5V)とRS-232を排他利用可能
 - ボード上のピンヘッダ(JP2)で選択
+- (注意) ピンヘッダの切り替えは必ず電源を切った状態で行ってください
 
 <div align="center">
 <img src="./Image/usage-uart_01.png" width="100%">
-<span style="color: red; ">※※※ ピンヘッダの切り替えは必ず電源を切った状態で行ってください ※※※</span>
 </div>
 
 - TTLとして使用する場合
@@ -331,10 +332,10 @@ apt-get install openocd
 - ボード上のピンヘッダ(JP1)で選択
 - 1.8V/3.3V/5Vの電圧をボード上で供給可能
 - 1.1-5.5Vの範囲で電圧を外部から供給可能
+- (注意) ピンヘッダの切り替えは必ず電源を切った状態で行ってください。
 
 <div align="center">
 <img src="./Image/usage-uart_05.png" width="100%">
-<span style="color: red; ">※※※ ピンヘッダの切り替えは必ず電源を切った状態で行ってください ※※※</span>
 </div>
 
 - 1.8Vで使用する場合
@@ -357,9 +358,9 @@ apt-get install openocd
 
 - 外部から電圧を供給する場合
     - JP1のピン2,4,6のいずれかに電圧を供給してください。
+    - (注意) 1.1-5.5Vの範囲でご使用下さい。
 <div align="center">
 <img src="./Image/usage-uart_09.png" width="100%">
-<span style="color: red; ">※※※ 1.1-5.5Vの範囲でご使用下さい。 ※※※</span>
 </div>
 
 ### RS-232
