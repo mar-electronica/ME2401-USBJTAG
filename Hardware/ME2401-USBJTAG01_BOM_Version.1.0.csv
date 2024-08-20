@@ -1,6 +1,6 @@
 Main Board,,,
 Part,Value,Device,Description
-ALED,,LED3MM,3mm Yellow LED
+ALED,LED3MM,LED3MM,3mm Yellow LED
 C1,0.1uF,C0805,Capacitor
 C2,0.1uF,C0805,Capacitor
 C3,10uF,C0805,Capacitor
@@ -87,8 +87,8 @@ X1,12MHz,ABLS7M2-12.000MHZ-D-2Y-T,CRYSTAL 12.0000MHZ 18PF SMD
 ,,,
 SWD Module,,,
 Part,Value,Device,Description
-C1,0.1uF,C0805,Capacitor
-IC1,74LVC1G125DBVRG4,74LVC1G125DBVRG4,SWD Line Driver
-CN1,FSS-42085-10,FSS-42085-10,JTAG 20pin Socket
-CN2,3221-10-0300-00,3221-10-0300-00,SWD 10pin Socket
-J1,2.54mm 1x5 Pin Header,2.54mm 1x5 Pin Header,2.54mm 1x5 Pin Header
+C33,0.1uF,C0805,Capacitor
+U6,74LVC1G125DBVRG4,74LVC1G125DBVRG4,SWD Line Driver
+CN5,FSS-42085-10,FSS-42085-10,JTAG 20pin Socket
+CN6,3221-10-0300-00,3221-10-0300-00,SWD 10pin Socket
+CN7,2.54mm 1x5 Pin Header,2.54mm 1x5 Pin Header,2.54mm 1x5 Pin Header
