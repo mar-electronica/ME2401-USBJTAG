@@ -1,0 +1,94 @@
+Main Board,,,
+Part,Value,Device,Description
+ALED,,LED3MM,3mm Yellow LED
+C1,0.1uF,C0805,Capacitor
+C2,0.1uF,C0805,Capacitor
+C3,10uF,C0805,Capacitor
+C4,10uF,C0805,Capacitor
+C5,22uF,C0805,Capacitor
+C6,22uF,C0805,Capacitor
+C7,27pF,C0805,Capacitor
+C8,27pF,C0805,Capacitor
+C9,10uF,C0805,Capacitor
+C10,10uF,C0805,Capacitor
+C11,0.1uF,C0805,Capacitor
+C12,0.1uF,C0805,Capacitor
+C13,0.1uF,C0805,Capacitor
+C14,0.1uF,C0805,Capacitor
+C15,0.1uF,C0805,Capacitor
+C16,0.1uF,C0805,Capacitor
+C17,0.1uF,C0805,Capacitor
+C18,0.1uF,C0805,Capacitor
+C19,0.1uF,C0805,Capacitor
+C20,0.1uF,C0805,Capacitor
+C21,0.1uF,C0805,Capacitor
+C22,0.1uF,C0805,Capacitor
+C23,0.1uF,C0805,Capacitor
+C24,0.1uF,C0805,Capacitor
+C25,0.1uF,C0805,Capacitor
+C26,0.1uF,C0805,Capacitor
+C27,0.1uF,C0805,Capacitor
+C28,0.1uF,C0805,Capacitor
+C29,0.1uF,C0805,Capacitor
+C30,0.1uF,C0805,Capacitor
+C31,0.1uF,C0805,Capacitor
+C32,10uF,C0805,Capacitor
+CN1,USB4105-GF-A,USB4105-GF-A,USB Type C Connectors
+CN2,30320-6002HB,30320-6002HB,JTAG 20pin Header
+CN3,2.54mm 1x5 Pin Header,2.54mm 1x5 Pin Header,2.54mm 1x5 Pin Header
+CN4,A-DS 09 A/KG-T2,A-DS_09_A_KG-T2,ASSMANN WSW A-DS Series 2.77mm Pitch 9 Way Right Angle Through Hole Mount PCB D-sub Connector
+ESD1,USBLC6-2SC6,USBLC6-2SC6,TVS Diode Array Uni-Directional USBLC6-2SC6 17V
+F1,Fuse 500mA,SMD0805B050TF,Resettable Fuses - PPTC PPTC 6V 0.5A
+FB1,MH2029-600Y,MH2029-600Y,Ferrite Beads 60 ohms 25% HIGH CURRENT
+FB2,MH2029-600Y,MH2029-600Y,Ferrite Beads 60 ohms 25% HIGH CURRENT
+JP1,2.54mm 2x3 Pin Header,2.54mm 2x3 Pin Header,2.54mm 2x3 Pin Header
+JP2,2.54mm 1x3 Pin Header,2.54mm 1x3 Pin Header,2.54mm 1x3 Pin Header
+LDO1,AZ1117CH-3.3TRG1,AZ1117CH-3.3TRG1,1.35A 3.3V LDO Regulator
+LDO2,AZ1117CH-1.8TRG1,AZ1117CH-1.8TRG1,1.35A 1.8V LDO Regulator
+PWRLED,LED3MM,LED3MM,3mm Red LED
+Q1,MMBT2222A-7-F,MMBT2222A-7-F,Bipolar Transistors - BJT 40V 300mW
+R1,5.1K,R0805,Resistor
+R2,5.1K,R0805,Resistor
+R3,12K,R0805,Resistor
+R4,12K,R0805,Resistor
+R5,12K,R0805,Resistor
+R6,2.2K,R0805,Resistor
+R7,12K,R0805,Resistor
+R8,1K,R0805,Resistor
+R9,12K,R0805,Resistor
+R10,12K,R0805,Resistor
+R11,56,R0805,Resistor
+R12,56,R0805,Resistor
+R13,56,R0805,Resistor
+R14,56,R0805,Resistor
+R15,56,R0805,Resistor
+R16,56,R0805,Resistor
+R17,12K,R0805,Resistor
+R18,47K,R0805,Resistor
+R19,12K,R0805,Resistor
+R20,12K,R0805,Resistor
+R21,1K,R0805,Resistor
+R22,1K,R0805,Resistor
+R23,1K,R0805,Resistor
+R24,1K,R0805,Resistor
+R25,1K,R0805,Resistor
+R26,DNP,R0805,Resistor
+R27,DNP,R0805,Resistor
+RLED,LED3MM,LED3MM,3mm Red LED
+ROM1,93C46B_SN,93C46B_SN,EEPROM 64x16
+RXLED,LED3MM,LED3MM,3mm Green LED
+TXLED,LED3MM,LED3MM,3mm Green LED
+U1,FT2232HL-R,FT2232HL-R,Dual High Speed USB to Multipurpose UART/FIFO IC 
+U2,TXU0104PWR,TXU0104PWR,Voltage Levels Four channel unidirectional level shifter
+U3,TXU0104PWR,TXU0104PWR,Voltage Levels Four channel unidirectional level shifter
+U4,TXU0204PWR,TXU0204PWR,Voltage Levels Four channel unidirectional level shifter
+U5,MAX3243ECDBR,MAX3243ECDBR,3-V to 5.5-V Multichannel RS-232 Line Driver/Receiver With +/-15kV IEC ESD Protection
+X1,12MHz,ABLS7M2-12.000MHZ-D-2Y-T,CRYSTAL 12.0000MHZ 18PF SMD
+,,,
+SWD Module,,,
+Part,Value,Device,Description
+C1,0.1uF,C0805,Capacitor
+IC1,74LVC1G125DBVRG4,74LVC1G125DBVRG4,SWD Line Driver
+CN1,FSS-42085-10,FSS-42085-10,JTAG 20pin Socket
+CN2,3221-10-0300-00,3221-10-0300-00,SWD 10pin Socket
+J1,2.54mm 1x5 Pin Header,2.54mm 1x5 Pin Header,2.54mm 1x5 Pin Header
