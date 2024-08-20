@@ -190,7 +190,6 @@ ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6010", MODE="0666"
 sudo udevadm trigger
 ```
 
-
 ME2401-USBJTAG01をLinuxのパソコンに接続すると、
 /dev/ttyUSB0(数字は環境に依存)のようなデバイスファイルが作成されます。
 上記の設定を行うことで、デバイスファイルが一般ユーザでもアクセス可能になります。
@@ -231,7 +230,9 @@ apt-get install openocd
 1. ターゲットとの接続
     - CN2とターゲットをケーブルで接続してください。
 <img src="./Image/usage-jtag_01.png" width="100%">
+
 <span style="color: red; ">※※※ ターゲットとの接続は必ず電源を切った状態で行ってください ※※※</span>
+
 2. OpenOCDの起動
     - -fオプションで[me2401-usbjtag01-jtag.cfg](./OpenOCD/me2401-usbjtag01-jtag.cfg)とターゲットに応じた設定ファイルを指定してください。
     - 正しく起動すると`Listening on port 333 for gdb connections`というメッセージが出力されます。
@@ -239,8 +240,8 @@ apt-get install openocd
 
 3. GDBの起動
     - ターゲットに応じたgdbを起動して`target extended-remote :3333`コマンドでOpenOCDに接続
-<img src="./Image/usage-jtag_03.png" width="100%">
     - GDBとの接続に成功するとOpenOCDに`accepting 'gdb' connection on tcp/3333`というメッセージが出力されます。
+<img src="./Image/usage-jtag_03.png" width="100%">
 <img src="./Image/usage-jtag_04.png" width="100%">
 
 - 動作確認環境
@@ -254,8 +255,10 @@ apt-get install openocd
     - SWDアダプタをCN2に取り付けてください。
     - SWDアダプタとターゲットをケーブルで接続してください。
 <img src="./Image/usage-swd_01.png" width="100%">
+
 <span style="color: red; ">※※※ SWDアダプタの接続は必ず電源を切った状態で行ってください ※※※</span><BR>
 <span style="color: red; ">※※※ ターゲットとの接続は必ず電源を切った状態で行ってください ※※※</span>
+
 2. OpenOCDの起動
     - -fオプションで[me2401-usbjtag01-swd.cfg](./OpenOCD/me2401-usbjtag01-swd.cfg)とターゲットに応じた設定ファイルを指定してください。
     - 正しく起動すると`Listening on port 333 for gdb connections`というメッセージが出力されます。
@@ -263,8 +266,8 @@ apt-get install openocd
 
 3. GDBの起動
     - ターゲットに応じたgdbを起動して`target extended-remote :3333`コマンドでOpenOCDに接続
-<img src="./Image/usage-swd_03.png" width="100%">
     - GDBとの接続に成功するとOpenOCDに`accepting 'gdb' connection on tcp/3333`というメッセージが出力されます。
+<img src="./Image/usage-swd_03.png" width="100%">
 <img src="./Image/usage-swd_04.png" width="100%">
 
 - 動作確認環境
